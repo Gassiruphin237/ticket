@@ -6,9 +6,9 @@ import Test from "./components/Test";
 export default function App() {
   return (
     <BrowserRouter>
-      <nav style={{ marginBottom: 20 }}>
+      {/* <nav style={{ marginBottom: 20 }}>
         <Link to="/">Inscription</Link> | <Link to="/scanner">Scanner</Link>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<RegistrationForm />} />

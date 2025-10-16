@@ -14,7 +14,7 @@ export default function RegistrationForm() {
 
   return (
     <div className="form-container">
-      <h2>Inscription à l'événement</h2>
+      {/* <h2>Inscription à l'événement</h2> */}
       {!qrCode ? (
         <form onSubmit={handleSubmit}>
           <input
@@ -31,10 +31,14 @@ export default function RegistrationForm() {
             onChange={(e) => setForm({ ...form, email: e.target.value })}
             required
           />
-          <button type="submit">S'inscrire</button>
+          <button type="submit" className="downloadBtn">S'inscrire</button>
+       
         </form>
       ) : (
+        <>
+           <br /><br />
         <TicketDisplay qrCode={qrCode} />
+        </>
       )}
     </div>
   );
