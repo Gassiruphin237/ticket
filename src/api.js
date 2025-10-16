@@ -1,8 +1,8 @@
 const API_URL = "http://localhost:3300/api";
-// const API_URL2 = "https://ticketapi-ddsg.onrender.com/api"
+const API_URL2 = "https://ticketapi-ddsg.onrender.com/api"
 
 export async function registerUser(formData) {
-  const res = await fetch(`${API_URL}/register`, {
+  const res = await fetch(`${API_URL2}/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData),
@@ -11,7 +11,7 @@ export async function registerUser(formData) {
 }
 
 export async function verifyTicket(id) {
-  const res = await fetch(`${API_URL}/verify`, {
+  const res = await fetch(`${API_URL2}/verify`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id }),
