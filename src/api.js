@@ -1,5 +1,5 @@
 // const API_URL = "http://localhost:3300/api";
-const API_URL2 = "http://192.168.50.191:3300/api"
+const API_URL2 = "https://ticketapi-ddsg.onrender.com/api"
 
 export async function registerUser(formData) {
   const res = await fetch(`${API_URL2}/register`, {
